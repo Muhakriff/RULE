@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boxInsetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".TaskActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="500dp"
+                android:layout_height="900dp"
+                android:layout_marginHorizontal="150dp"
+                app:cardBackgroundColor="#FF9800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_DOC"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:elevation="10dp"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:elevation="10dp"
+                        app:layout_constraintBottom_toBottomOf="@id/img_DOC"
+                        app:layout_constraintEnd_toEndOf="@id/img_DOC"
+                        app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="4dp"
+                android:elevation="10dp"
+                android:text="Name of Task"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+            <TextView
+                android:id="@+id/tv_Task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+
+                android:drawableStart="@drawable/ic_baseline_event_note_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Name Of Task"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView13" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:text="Person In Charge"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/tv_Task" />
+
+            <TextView
+                android:id="@+id/tv_PIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Person In Charge"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView14"
+                app:layout_constraintTop_toBottomOf="@id/textView14" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:text="Date Assigned"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/tv_PIC" />
+
+            <TextView
+                android:id="@+id/tv_DOT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Date of Task"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView15"
+                app:layout_constraintTop_toBottomOf="@id/textView15" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:text="Place Assigned"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/tv_DOT" />
+
+            <TextView
+                android:id="@+id/tv_POT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_place_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Place of Task"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView16"
+                app:layout_constraintTop_toBottomOf="@id/textView16" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:text="Note For Student"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/tv_POT" />
+
+            <TextView
+                android:id="@+id/tv_noteToStudent"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:scrollbars="vertical"
+                android:text="Note For Student"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView17"
+                app:layout_constraintTop_toBottomOf="@id/textView17" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:text="Date of Completion"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/tv_noteToStudent" />
+
+
+            <TextView
+                android:id="@+id/tv_DOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Date of Completion"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView18"
+                app:layout_constraintTop_toBottomOf="@id/textView18" />
+
+            <Button
+                android:id="@+id/btn_upload_Task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:text="UPLOAD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_DOC" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".HistoryEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="500dp"
+                android:layout_height="900dp"
+                android:layout_marginHorizontal="150dp"
+                app:cardBackgroundColor="#FF9800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.cardview.widget.CardView
+                android:elevation="10dp"
+                android:id="@+id/cardview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:elevation="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:elevation="10dp"
+                        android:id="@+id/img_event"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_baseline_file_upload_24"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="2dp"
+                android:text="Particitpated Event: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+            <TextView
+                android:id="@+id/et_pe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_event_note_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Name Of Event"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Type Of Extra Co-Curriculum: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/et_pe" />
+
+            <TextView
+                android:id="@+id/et_Event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_style_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Name Of Organiser/Supervisor/PIC"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView6"
+                app:layout_constraintTop_toBottomOf="@id/textView" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Person In Charge"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/et_Event" />
+
+            <TextView
+                android:id="@+id/et_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Name Of Organiser/Supervisor/PIC"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView6"
+                app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Event"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView6"
+                app:layout_constraintTop_toBottomOf="@id/et_pic" />
+
+            <TextView
+                android:id="@+id/et_dotg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Date Of Event"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView2"
+                app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_marginVertical="8dp"
+                android:text="Date Of Submission"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/et_dotg" />
+
+            <TextView
+                android:id="@+id/et_dotu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView10"
+                app:layout_constraintTop_toBottomOf="@id/textView10" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Place of Event"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/et_dotu" />
+
+            <TextView
+                android:id="@+id/et_pot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_place_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Where"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView12"
+                app:layout_constraintTop_toBottomOf="@id/textView12" />
+
+            <TextView
+                android:id="@+id/tv_Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_marginVertical="8dp"
+                android:text="Description"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/et_pot" />
+
+            <TextView
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Describe what happen"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/tv_Description"
+                app:layout_constraintTop_toBottomOf="@id/tv_Description" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

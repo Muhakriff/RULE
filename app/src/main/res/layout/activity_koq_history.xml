@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".KoqHistory">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="500dp"
+                android:layout_height="900dp"
+                android:layout_marginHorizontal="150dp"
+                app:cardBackgroundColor="#FF9800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Component Of Evaluation"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/et_comp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_style_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Particitpated Event: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_comp" />
+
+            <TextView
+                android:id="@+id/et_pe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_event_note_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="10dp"
+                android:layout_marginVertical="8dp"
+                android:text="Name Of Organiser/Supervisor/Person In Charge: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_pe" />
+
+            <TextView
+                android:id="@+id/tv_PIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView19"
+                app:layout_constraintTop_toBottomOf="@id/textView19" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:elevation="10dp"
+                android:text="Role/Position: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_PIC" />
+
+            <TextView
+                android:id="@+id/tv_jawatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_style_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView13" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="10dp"
+                android:layout_marginVertical="8dp"
+                android:text="Level of Involvement: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_jawatan" />
+
+            <TextView
+                android:id="@+id/tv_penglibatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_style_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView14"
+                app:layout_constraintTop_toBottomOf="@id/textView14" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Type Of Commitment Shown: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_penglibatan" />
+
+            <TextView
+                android:id="@+id/tv_komitmen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_style_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView15"
+                app:layout_constraintTop_toBottomOf="@id/textView15" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Charity Service: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_komitmen" />
+
+            <TextView
+                android:id="@+id/tv_ks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_style_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView16"
+                app:layout_constraintTop_toBottomOf="@id/textView16" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="10dp"
+                android:layout_marginVertical="8dp"
+                android:text="Attendance: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_ks" />
+
+            <TextView
+                android:id="@+id/tv_kehadiran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_style_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView17"
+                app:layout_constraintTop_toBottomOf="@id/textView17" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:elevation="10dp"
+                android:text="Highest Achievement: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_kehadiran" />
+
+            <TextView
+                android:id="@+id/tv_pencapaian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_style_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView18"
+                app:layout_constraintTop_toBottomOf="@id/textView18" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="32dp"
+                android:elevation="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Total \nPoint \nCollected: "
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_pencapaian" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:elevation="10dp"
+                android:fontFamily="cursive"
+                android:text="0"
+                android:textColor="#F44336"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/textView"
+                app:layout_constraintStart_toEndOf="@id/textView"
+                app:layout_constraintTop_toTopOf="@id/textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

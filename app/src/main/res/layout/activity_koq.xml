@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".KoqActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="500dp"
+                android:layout_height="900dp"
+                android:layout_marginHorizontal="150dp"
+                app:cardBackgroundColor="#FF9800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:elevation="10dp"
+                android:id="@+id/radio_btnComp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:buttonTint="#FF9800"
+                    android:checked="true"
+                    android:text="Kelab dan Persatuan"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:buttonTint="#FF9800"
+                    android:text="Badan dan Unit Beruniform"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:buttonTint="#FF9800"
+                    android:text="Sukan dan Permainan"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Particitpated Event: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radio_btnComp" />
+
+            <EditText
+                android:id="@+id/et_pe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableStart="@drawable/ic_baseline_event_note_24"
+                android:drawableTint="#FF9800"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Name Of Organiser/Supervisor/Person In Charge: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_pe" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:elevation="10dp"
+                android:id="@+id/drop_pic"
+                android:background="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Select"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView19">
+
+                <AutoCompleteTextView
+                    android:id="@+id/item_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableTint="#FF9800"
+                    android:elevation="10dp"
+                    android:inputType="textMultiLine"></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Role/Position: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drop_pic" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:elevation="10dp"
+                android:id="@+id/drop_jawatan"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Select"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView13">
+
+                <AutoCompleteTextView
+                    android:id="@+id/item_jawatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_baseline_style_24"
+                    android:drawableTint="#FF9800"
+                    android:elevation="10dp"
+                    android:inputType="textMultiLine"
+                    android:text=""></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_pointJawatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="10dp"
+                android:text="0"
+                android:textColor="#FF1100"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/drop_jawatan"
+                app:layout_constraintTop_toBottomOf="@id/drop_jawatan" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Level of Involvement: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drop_jawatan" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:elevation="10dp"
+                android:id="@+id/drop_penglibatan"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Select"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView14">
+
+                <AutoCompleteTextView
+                    android:id="@+id/item_penglibatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_baseline_style_24"
+                    android:drawableTint="#FF9800"
+                    android:elevation="10dp"
+                    android:inputType="textMultiLine"
+                    android:text=""></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_pointPenglibatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="10dp"
+                android:text="0"
+                android:textColor="#FF1100"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/drop_penglibatan"
+                app:layout_constraintTop_toBottomOf="@id/drop_penglibatan" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Type Of Commitment Shown: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drop_penglibatan" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:elevation="10dp"
+                android:id="@+id/drop_komitmen"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Select"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView15">
+
+                <AutoCompleteTextView
+                    android:id="@+id/item_komitmen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_style_24"
+                    android:background="@color/white"
+                    android:drawableTint="#FF9800"
+                    android:elevation="10dp"
+                    android:inputType="textMultiLine"
+                    android:text=""></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_pointkomitmen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="10dp"
+                android:text="0"
+                android:textColor="#FF1100"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/drop_komitmen"
+                app:layout_constraintTop_toBottomOf="@id/drop_komitmen" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Charity Service: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drop_komitmen" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:elevation="10dp"
+                android:id="@+id/drop_ks"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Select"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView16">
+
+                <AutoCompleteTextView
+                    android:id="@+id/item_ks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_baseline_style_24"
+                    android:drawableTint="#FF9800"
+                    android:elevation="10dp"
+                    android:inputType="textMultiLine"
+                    android:text=""></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_pointKS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="10dp"
+                android:text="0"
+                android:textColor="#FF1100"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/drop_ks"
+                app:layout_constraintTop_toBottomOf="@id/drop_ks" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Attendance: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drop_ks" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:elevation="10dp"
+                android:id="@+id/drop_kehadiran"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Select"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView17">
+
+                <AutoCompleteTextView
+                    android:id="@+id/item_kehadiran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_baseline_style_24"
+                    android:drawableTint="#FF9800"
+                    android:elevation="10dp"
+                    android:inputType="textMultiLine"
+                    android:text=""></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_pointKehadiran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="10dp"
+                android:text="0"
+                android:textColor="#FF1100"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/drop_kehadiran"
+                app:layout_constraintTop_toBottomOf="@id/drop_kehadiran" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="Highest Achievement: "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drop_kehadiran" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:elevation="10dp"
+                android:id="@+id/drop_pencapaian"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginHorizontal="16dp"
+                android:hint="Select"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textView13"
+                app:layout_constraintTop_toBottomOf="@id/textView18">
+
+                <AutoCompleteTextView
+                    android:id="@+id/item_pencapaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_baseline_style_24"
+                    android:drawableTint="#FF9800"
+                    android:elevation="10dp"
+                    android:inputType="textMultiLine"
+                    android:text=""></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_pointPencapaian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:elevation="10dp"
+                android:text="0"
+                android:textColor="#FF1100"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/drop_pencapaian"
+                app:layout_constraintTop_toBottomOf="@id/drop_pencapaian" />
+
+            <Button
+                android:elevation="10dp"
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="SEND"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drop_pencapaian" />
+
+            <TextView
+                android:elevation="10dp"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:gravity="fill"
+                android:text="Total Point \nCollected: "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_send"
+                app:layout_constraintStart_toEndOf="@id/btn_send"
+                app:layout_constraintTop_toTopOf="@id/btn_send"
+                />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:elevation="10dp"
+                android:fontFamily="cursive"
+                android:text="0"
+                android:textColor="#FF1100"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/textView"
+                app:layout_constraintStart_toEndOf="@id/textView"
+                app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

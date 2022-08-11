@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "840685446092",
+    "firebase_url": "https://rule-95158-default-rtdb.firebaseio.com",
+    "project_id": "rule-95158",
+    "storage_bucket": "rule-95158.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840685446092:android:c97638b651935a54807369",
+        "android_client_info": {
+          "package_name": "com.example.rule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840685446092-o7q7pjoh9l94hg6t2thm3u8kn03f3r4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZrXpNPw0K1nckGR1eTtmHlGnvtTPilxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840685446092-o7q7pjoh9l94hg6t2thm3u8kn03f3r4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
